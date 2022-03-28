@@ -9,25 +9,25 @@ let num2=Number(num_2)
 
 if (operation=="+")
 {
-    console.log(num_1+num_2);
+    console.log(num+num2);
     document.write("num_1+num_2");
 }
 
 if (operation=="-")
 {
-    console.log(num_1-num_2);
+    console.log(num-num2);
     document.write("num_1-num_2");
 }
 
 if (operation=="*")
 {
-    console.log(num_1*num_2);
+    console.log(num*num2);
     document.write("num_1*num_2");
 }
 
 if (operation=="/")
 {
-    console.log(num_1/num_2);
+    console.log(num/num2);
     document.write("num_1/num_2");
 }
 
