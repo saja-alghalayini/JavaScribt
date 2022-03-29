@@ -25,13 +25,14 @@ function getdatafrominput(event)
 
 function cont(name,phnType,price,condition)
 {
-    this.name=name;
-    this.phnType=phnType;
-    this.price=price;
-    this.condition=condition;
+    this.name = name;
+    this.phnType = phnType;
+    this.price = price;
+    this.condition = condition;
     bigArray.push(this);
     console.log (bigArray)
-    //storeinlocalstorage()
+
+    storeinlocalstorage()
 
 }
 
@@ -46,14 +47,41 @@ function condition2 (s)
 
 function storeinlocalstorage()
 {
-    let strng = JSON.stringify(salesarr[salesarr.length-1])
-    localStorage.setItem( salesarr[salesarr.length-1].name ,strng )
+    let Strng = JSON.stringify(bigArray[bigArray.length-1])
+    localStorage.setItem( bigArray[bigArray.length-1].name ,Strng )
 }
 
-function fromlocalstoarge ()
+function fromlocalstoarge()
 {
-    let keyy = salesarr[salesarr.length-1].name ;
-    let localstoargeitem = localStorage.getItem(keyy);
-    let toobject = JSON.parse(localstoargeitem);
-    return toobject;
+    let saj = bigArray[bigArray.length-1].name ;
+    let localstoargeitem = localStorage.getItem(saj);
+    let toObject = JSON.parse(localstoargeitem);
+    if(toobject !== null)
+
+    return toObject;  // toObject: This method returns a cloned object.
+}
+
+
+
+function showData()
+{
+let getfromlocalstoarge = fromlocalstoarge();
+ console.log(getfromlocalstoarge); 
+
+ let table = document.createElement("tableRow");
+ tablebody.appendChild(table); 
+
+ let table2 = document.createElement("tableData");
+ tabledt1.innerText = getfromlocalstoarge.name;
+ console.log(table2);
+
+ let table3 = document.createElement("tableData");
+ table3.innerText = getfromlocalstoarge.ptype;
+ 
+ let table4 = document.createElement("tableData");
+ table4.innerText = getfromlocalstoarge.price;
+ 
+ let table5 = document.createElement("tableData");
+ table5.innerText = getfromlocalstoarge.isnew;
+ tablerow.append(table2,table3,table4,table5)   
 }
