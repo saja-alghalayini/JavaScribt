@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+
+    <style>
+        
+        article {
+            width: 400px;
+            border: 1px solid rgba(165, 35, 143, 0.582);
+            position: relative;
+            margin: 5px;
+        }
+
+        article h2 {
+            margin: 0px;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+
+        article .showlink {
+            position: absolute;
+            right: 10px;
+            top: 20px;
+        }
+
+        article .text {
+            padding: 10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 0.9em;
+            color:rgb(133, 25, 109);
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <article>
+
+        <h2>What is lorem ipsum?</h2>
+
+        <div id="p.1-show" class="showlink"><a href="#" onclick="show('p.1-text');hide('p.1-show');">Show</a></div>
+        <div id="p.1-text" class="text" style="display:none">
+
+
+            <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato 
+                il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri
+                 e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio
+                  alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli
+                  60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi
+                  del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva
+                   versioni del Lorem Ipsum..</p>
+            <p>  
+                <a href="#" onclick="show('p.1-show');hide('p.1-text');">Hide</a></p>
+        </div>
+    </article>
+    
+    <article>
+
+        <h2>Why do we use it?</h2>
+
+        <div id="p.2-show" class="showlink"><a href="#" onclick="show('p.2-text');hide('p.2-show');">Show</a></div>
+        <div id="p.2-text" class="text" style="display:none">
+
+
+            <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato 
+                il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri
+                 e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio
+                  alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli
+                  60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi
+                  del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva
+                   versioni del Lorem Ipsum...</p>
+            <p>
+                <a href="#" onclick="show('p.2-show');hide('p.2-text');"->Hide</a></p>
+        </div>
+
+
+    </article>
+    
+    <article>
+
+
+        <h2>Where does it come from?</h2>
+
+        <div id="p.3-show" class="showlink"><a href="#" onclick="show('p.3-text');hide('p.3-show');">Show</a></div>
+        <div id="p.3-text" class="text" style="display:none">
+
+
+            <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato 
+                il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri
+                 e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio
+                  alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli
+                  60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi
+                  del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva
+                   versioni del Lorem Ipsum..</p>
+            <p>
+                <a href="#" onclick="show('p.3-show');hide('p.3-text');">Hide</a></p>
+
+        </div>
+
+    </article>
+
+</body>
+<script src="./task6.js"></script>
+</html>

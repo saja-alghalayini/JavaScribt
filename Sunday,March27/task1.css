@@ -1,0 +1,30 @@
+.divForm
+{
+  width: 50%;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.divTable
+{
+  width: 30%;
+  display: inline-block;
+}
+#tableCon
+
+{
+  width: 100%;
+  margin-top: 50px;
+  /* we can double the border by typing border: px double black */
+}
+
+tr
+{
+  text-align: center;
+}
+
+td
+{
+  border: 3px solid rgba(255, 0, 0, 0.527);
+  height: 25px;
+  width: 50px;
+}

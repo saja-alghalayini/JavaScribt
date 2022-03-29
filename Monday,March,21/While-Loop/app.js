@@ -4,7 +4,6 @@
 
 /////////////Q.1////////////
 
-
 function subtract(s)
 {
   let num=s;
@@ -23,15 +22,11 @@ document.getElementById("demo1").innerHTML=subtract(5);
 
 function factorial (s)
 {
-    let total = 1 ;
-    while (s > 0)
-    {
-        total = total * s ;
-        s--;
-
-    }
+    let total = s*7 ;
     return total ;
 }
+
+document.getElementById("demo2").innerHTML=factorial(1);
 
 /////////////Q.3////////////
 
@@ -89,6 +84,27 @@ function muti2 (x ,s)
     }
   return total ; 
 }
+
+/////////////Q.8/////////////
+
+
+/////////////Q.9/////////////
+
+function countDown(a) 
+{
+  let arr=[]
+  while(a>0)
+  {
+    arr.push(a)
+    a--
+  }
+  if (a==0) 
+  {
+    arr.push("done")
+  }
+  return `${arr.join(', ')}`;
+}
+console.log(countDown(9));
 
 /////////////Q.10////////////
 

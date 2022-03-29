@@ -258,3 +258,76 @@ function sameLength( i, s)
   
   document.getElementById("demo18").innerHTML= fullName("Saj","Al Ghalayini") +" , "+fullName("Saj", "Al Ghalayini") ;
   
+
+/////////////Q.19/////////////
+
+function average (number1, number2, number3, number4, number5) 
+{
+  return (number1 + number2 + number3 + number4 + number5) / 5;
+}
+
+/////////////Q.20/////////////
+function randomNumber() {
+  return Math.random();
+
+
+/////////////Q.21/////////////
+
+function randomBetweenNumbers(x, y) {
+  return Math.floor(Math.random() * (y - x)) + x
+
+
+/////////////Q.22/////////////
+
+function socreInUniversity(score) 
+{
+  if (score >= 95 && score < 100)
+    return 'A';
+
+  if (score >= 85 && score < 94)
+    return 'B';
+
+  if (score >= 70 && score < 84)
+    return 'C';
+
+  if (score >= 50 && score < 70)
+    return 'D';
+
+  if (score >= 0 && score < 49)
+    return 'F';
+}
+
+/////////////Q.23/////////////
+
+let count = 0
+function counter() {
+  return ++count;
+}
+
+////////////////Q.24//////////
+
+  // function counter1()
+  // {
+  //   let c=0;
+  //   c++ ; return c
+  // }
+  // console.log(counter1());
+  // console.log(counter1());
+  // console.log(counter1());
+  // console.log(counter1());
+  // console.log(counter1());
+
+
+    // /////////////Q.25/////////
+
+    // function naresetCounterme() 
+    // {
+    //     let x= c;
+    //     c=0 
+    //     return  `${x} and the counter reset now `;
+    // }
+    // console.log(naresetCounterme());
+    // console.log(counter1());
+    // console.log(counter1());
+    // console.log(counter1());
+  

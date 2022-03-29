@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        Change Font Style by Option
+        Dropdown Javascript
+    </title>
+</head>
+  
+<body style="text-align:center;">
+  
+    <div id="output-text">
+        <h1 style="color:rgba(125, 49, 155, 0.719);">
+            Orange Coding Academy
+        </h1>
+    </div>
+  
+    <select id="input-font" class="input"
+        onchange="changeFontStyle (this);">
+  
+        <option value="Times New Roman" 
+            selected="selected" style="color: blueviolet;">
+            Times New Roman
+        </option>
+        <option value="Arial" style="color: blueviolet;">Arial</option>
+        <option value="fantasy" style="color: blueviolet;">Fantasy</option>
+        <option value="cursive" style="color: blueviolet;">cursive</option>
+
+    </select>
+  
+    <script>
+        
+        var changeFontStyle = function (font) 
+        {
+            document.getElementById("output-text").style.fontFamily= font.value;           
+        }
+
+    </script>
+</body>
+  
+</html>

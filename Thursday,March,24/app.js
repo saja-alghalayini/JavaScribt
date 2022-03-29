@@ -2,6 +2,7 @@
 'use strict';
 
 /////////////Q.1//////////////
+
 let me={
     firstName:'Saja',
     lastName:'AL Ghalayini',
@@ -18,6 +19,7 @@ document.getElementById("demo1").innerHTML= 'hi my name is'+me.firstName+ " that
 
 
 ///////////////Array////////////////
+
 let persons=[
     {name: {first:'John', last:'Hob'}, age:35},
     {name: { first: 'Alex', last: 'Mercer' }, age:25 },
@@ -28,6 +30,7 @@ let persons=[
 
 
 /////////////Q.2//////////////
+
 let firstName=[];
 function firstName(persons)
 {
@@ -41,6 +44,7 @@ console.log (firstName(persons))
 document.getElementById("demo2").innerHTML =persons ;
 
 /////////////Q.3//////////////
+
 function averageAge(persons)
 {
 firstName =0;
@@ -55,12 +59,16 @@ console.log(firstName(persons))
 document.getElementById("demo3").innerHTML =firstName;
 
 /////////////Q.4//////////////
-function olderPerson(person) {
+
+function olderPerson(person) 
+{
     let max = persons[0].age;
     let oldername = "";
   
-    for (let i = 0; i < persons.length; i++) {
-      if (max < persons[i].age) {
+    for (let i = 0; i < persons.length; i++) 
+    {
+      if (max < persons[i].age) 
+      {
         max = person[i].age;
         oldername = persons[i]['name']['first'] + ' ' + persons[i]['name']['last'];
       }
@@ -68,7 +76,23 @@ function olderPerson(person) {
   
     return oldername;
   
-  }
+}
   document.getElementById("demo4").innerHTML = max ;
+
+
+
+  /////////////Q.7//////////////
+
+  function repeatWorld(string) 
+  {
+    let subString=string.toLowerCase().split(' ');
+    let obj={};
+    let count;
+    for(let i=0; i<string.length; i++)
+    {
+      let objIndex=obj [subString[i]];
+      
+    }
+  }
 
   
