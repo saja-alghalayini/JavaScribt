@@ -267,15 +267,17 @@ function average (number1, number2, number3, number4, number5)
 }
 
 /////////////Q.20/////////////
-function randomNumber() {
+function randomNumber() 
+{
   return Math.random();
-
+}
 
 /////////////Q.21/////////////
 
-function randomBetweenNumbers(x, y) {
+function randomBetweenNumbers(x, y) 
+{
   return Math.floor(Math.random() * (y - x)) + x
-
+}
 
 /////////////Q.22/////////////
 
@@ -300,34 +302,18 @@ function socreInUniversity(score)
 /////////////Q.23/////////////
 
 let count = 0
-function counter() {
+function counter()
+{
   return ++count;
 }
 
 ////////////////Q.24//////////
 
-  // function counter1()
-  // {
-  //   let c=0;
-  //   c++ ; return c
-  // }
-  // console.log(counter1());
-  // console.log(counter1());
-  // console.log(counter1());
-  // console.log(counter1());
-  // console.log(counter1());
+function resetCounter()
+{
+  let oldCounter = count
+  count = 0;
+  return oldCounter + " and the count reset now";
+}
 
-
-    // /////////////Q.25/////////
-
-    // function naresetCounterme() 
-    // {
-    //     let x= c;
-    //     c=0 
-    //     return  `${x} and the counter reset now `;
-    // }
-    // console.log(naresetCounterme());
-    // console.log(counter1());
-    // console.log(counter1());
-    // console.log(counter1());
   

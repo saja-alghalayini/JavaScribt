@@ -6,8 +6,10 @@
 //////////////Q.1//////////////
 
 let demo1;
-function doubleNumbers(array) {
-    demo1 =array.map(function(i,index){
+function doubleNumbers(array) 
+{
+    demo1 =array.map(function(i,index)
+    {
         return i2;
     });
 }
@@ -18,10 +20,12 @@ console.log(Demo1);
 //////////////Q.2//////////////
 
 let Demo2;
-function stringItUp(array){
-    Demo2=array.map(function(i,index){
+function stringItUp(array)
+{
+    Demo2=array.map(function(i,index)
+    {
     return i.toString();
-})
+    })
 }
 stringItUp([2, 5, 100])
 console.log(Demo2);
@@ -30,8 +34,10 @@ console.log(Demo2);
 //////////////Q.3//////////////
 
 let Demo3;
-function capitalizeNames(array){
-    Demo3=array.map(function(i,index){
+function capitalizeNames(array)
+{
+    Demo3=array.map(function(i,index)
+    {
         return i.toUpperCase();
     })
 }
@@ -42,8 +48,10 @@ console.log(Demo3);
 //////////////Q.4//////////////
 
 let Demo4;
-function namesOnly(array){
-    newArray4=array.map(function(i,index){
+function namesOnly(array)
+{
+    newArray4=array.map(function(i,index)
+    {
         return i.name;
     })
 }
@@ -77,10 +85,13 @@ namesOnly([
 //////////////Q.5//////////////
 
 let Demo5;
-function makeStrings(array){
-    Demo5=array.map(function(i,index){
+function makeStrings(array)
+{
+    Demo5=array.map(function(i,index)
+    {
         let x='';
-        if(i.age<18){
+        if(i.age<18)
+        {
             x='is under age!!';
         }
         else{
@@ -118,8 +129,10 @@ makeStrings([
 //////////////Q.6//////////////
 
 let Demo6;
-function readyToPutInTheDOM(array){
-    Demo6=array.map(function(i,index){
+function readyToPutInTheDOM(array)
+{
+    Demo6=array.map(function(i,index)
+    {
         return `<h1> $ {i.name} </h1> <h2> $ {i.age} </h2>` ;
     })
 }
@@ -151,8 +164,10 @@ console.log(Demo6);
 //////////////Q.7//////////////
 
 let Demo7;
-function doubleValues(array) {
-    Demo7 =array.map(function(i,index){
+function doubleValues(array) 
+{
+    Demo7 =array.map(function(i,index)
+    {
         return i2;
     });
 }
@@ -175,30 +190,20 @@ console.log(Demo8);
 
 //////////////Q.9//////////////
 
-function extractKey(array,key)
+function extractKey(arr, key)
 {
-console.log(key);
-fmap = array.map|(item => item [key]);
-console.log(fmap);
+    return arr.map(y => (y[key]));
 }
-extractKey(array2,"name");
-
-console.log('Demo9');
-function extractKey(arr, key){
-    let narr=arr.map(function(v){
-
-        return v.name;
-    })
-    return narr;
-}
-
+console.log(extractKey([{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}], 'name'))
 
 //////////////Q.10//////////////
 
-//console.log('Demo10');
-//function extractFullName(arr,key){
-    //let array=arr.map(function(v){
-        //return ${v.first} ${v.last};        
-    //})
-    //return array;}
+function extractFullName()
+{
+    let result = array.map(x => (x["first"]+" "+x["last"]));   
+    return result;
+  }
+  console.log(extractFullName(
+    [{first: 'Elie', last:"Schoppik"}, {first: 'Tim', last:"Garcia"}, {first: 'Matt', last:"Lane"}, {first: 'Colt', last:"Steele"}]
+  ))
 

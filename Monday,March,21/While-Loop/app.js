@@ -119,3 +119,26 @@ function multiplication2 (x,s)
 }
 
 /////////////Q.11////////////
+
+function mod2(x, y) {
+  while (x> y || x === y) {
+    x= x - y;
+  }
+  return x;
+}
+
+/////////////Q.12////////////
+
+function repeatChar(x, y) {
+  let count = 0;
+  while (x.length !== 0) {
+    if (x[0].toUpperCase() === y.toUpperCase()) {
+      count++;
+    }
+    x = x.slice(1, x.length);
+  }
+  return count;
+}
+
+
+

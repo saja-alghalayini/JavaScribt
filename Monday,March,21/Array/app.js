@@ -250,9 +250,148 @@ function oddArray(array)
   console.log(oddArray(array));
 
 
+  /////////////Q.17//////////////
+
+  function aveArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      sum = sum + arr[i];
+    }
+    return sum / arr.length;
+  }
   
-
-
+  function aveArray2(array) {
+    let sum = 0;
+    let i = 0;
+    while (i < array.length) {
+      sum = sum + array[i];
+      i++;
+    }
+    return sum / array.length;
+  }
      
+/////////////Q.18//////////////
 
+function shorterInArray(arr) {
+  let shortest = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length < shortest.length) {
+      shortest = arr[i];
+    }
+  }
+  return shortest;
+}
 
+function shorterInArray2(array) {
+  let shortest = array[0];
+  let i = 0;
+  while (i < array.length) {
+    if (array[i].length < shortest.length) {
+      shortest = array[i];
+    }
+    i++;
+  }
+  return shortest;
+}
+
+/////////////Q.19//////////////
+
+function repeatChar(str, chr) {
+  let result = 0;
+  for (var i = 0; i < str.length; i++) {
+    if (str[i].toLowerCase() === chr.toLowerCase()) {
+      result++;
+    }
+  }
+  return result;
+}
+
+function repeatChar2(str, chr) {
+  let result = 0;
+  let i = 0;
+  while (i < str.length) {
+    if (str[i].toLowerCase() === chr.toLowerCase()) {
+      result++;
+    }
+    i++;
+  }
+  return result;
+}
+
+/////////////Q.20//////////////
+
+function evenIndexOddLength(array) {
+    let result = [];
+    for (let i = 0; i < array.length; i = i + 2) {
+      if (array[i].length % 2 === 1) {
+        result.push(array[i])
+      }
+    }
+    return arr;
+  }
+  
+  function evenIndexOddLength2(array) {
+    let result = [];
+    let i = 0;
+    while (i < array.length) {
+      if (array[i].length % 2 === 1) {
+        result.push(array[i])
+      }
+      i = i + 2;
+    }
+    return result;
+  }
+
+  /////////////Q.21//////////////
+
+  function powerElementIndex(array) 
+  {
+    let result = [];
+    for (let i = 0; i < array.length; i++) 
+    {
+      result[i] = array[i] ** i;
+    }
+    return result;
+  }
+  
+  function powerElementIndex2(arr) 
+  {
+    let result = [];
+    let i = 0;
+    while (i < arr.length) 
+    {
+      result[i] = arr[i] ** i;
+      i++;
+    }
+    return result;
+  }
+
+  /////////////Q.22//////////////
+
+  function evenNumberEvenIndex(array) 
+  {
+    let result = [];
+    for (let i = 0; i < array.length; i = i + 2) 
+    {
+      if (array[i] % 2 === 0) 
+      {
+        result.push(array[i]);
+      }
+    }
+    return result;
+  }
+  
+  function evenNumberEvenIndex2(arr) 
+  {
+    let result = [];
+    let i = 0;
+    while (i < array.length) 
+    {
+      if (arr[i] % 2 === 0)
+       {
+        result.push(arr[i]);
+      }
+      i = i + 2;
+    }
+    return result;
+  }
