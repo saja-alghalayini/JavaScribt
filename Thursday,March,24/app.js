@@ -5,7 +5,7 @@
 /////////////Q.1//////////////
 
 let me={
-    firstName:'Saja',
+    firstName1:'Saja',
     lastName:'AL Ghalayini',
     age:'20',
     bd:'14.3.2002',
@@ -13,7 +13,7 @@ let me={
     favmovies:['Sherlock Holmes','Enola','Avengers','Pride and Prejudice','Rescued by Ruby']
 };
 
-document.getElementById("demo1").innerHTML= 'hi my name is'+me.firstName+ " that is my last name +me.lastName+ 'that is my age'+me.age+ 'this is my birthday'"+me.bd+" 'those are my favorite movies'"+me.favmovies+" 'those are my favorite dishes'"+me.favfood;
+document.getElementById("demo1").innerHTML= 'hi my name is'+me.firstName1+ " that is my last name +me.lastName+ 'that is my age'+me.age+ 'this is my birthday'"+me.bd+" 'those are my favorite movies'"+me.favmovies+" 'those are my favorite dishes'"+me.favfood;
 
 ////////////The join() method returns an array as a string/////////////
 
